@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* width : 가로영역, height : 세로영역, float : 다음요소를 띄운다, margin :테두리설정으로 다른 요소간의 간격조정 */
+        body {background: #c8e6c9;font-size: 30px; color: red; text-align: center; text-transform: uppercase;}
+        #wrap{width: 1000px;height: 900;margin: auto;}
+        #header{width: 1000px;height: 100px;background: #2e7d32;}
+        #nav{width: 1000px;height: 100px;background: #388e3c;}
+        #side{float: left; width: 300px;height: 600px;background: #43a047;}
+        #contents{float: left;width: 700px;height: 600px;background: #4caf50;}
+        #footer{float: left;width: 1000px;height: 100px;background: #66bb6a;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- wrap : 전체레이아웃을 잡을 때 통용적으로 사용하는 id -->
+        <!-- div*5 동일한 테그를 생성시 -->
+        <!-- 블럭구조: 하나의 div(영역)을 설정하고 추가적인 영역은 하단으로 이어서 생성된다.-->
+        
+        <div id = "header">머리</div>
+        <div id="nav">상단</div>
+        <div id="side">사이드바</div>
+        <div id="contents">중단</div>
+        <div id="footer">하단영역</div>
+    </div>
+</body>
+</html>

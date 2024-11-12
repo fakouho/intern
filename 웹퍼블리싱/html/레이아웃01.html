@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko"><!--브라우저가 인식하는 언어-->
+<head>
+    <meta charset="UTF-8"><!--문서가 인식하는 언어설정-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--
+    mata개념정리
+    -크게 3가지 속성 = charset(언어설정),name(정보이름),content(정보값)
+    1. name,content
+        -> name -"keywords" content ="검색단어"
+        -> name -"Description" content ="검색결과문장"
+        -> name -"author" content ="제작자"
+   -->
+    <meta name="author" content="강우석">
+    <meta name="keywords" content="HTML">
+    <meta name="Description" content="HTML활용한 웹표준 준수 예제">
+    <title>Document</title>
+    <!--css style-->
+    <link rel="stylesheet" href="/웹퍼블리싱/css/reset.css">
+    <link rel="stylesheet" href="/웹퍼블리싱/css/레이아웃01.css">
+
+    <!--구글 폰트 적용-->
+</head>
+<body>
+    <!-- 스킵 내비게이션 기능-->
+    <div id="skip">
+        <a href="#cont_nav">전체 메뉴 바로가기</a>
+        <a href="#cont_ban">배너 영역 바로가기</a>
+        <a href="#cont_cont">컨텐츠 영역 바로가기</a>
+    </div>
+    <!-- 스킵 내비게이션 기능 종료-->
+
+    <div id="wrap">
+        <div id="header">
+            <div class="container">
+                <div class="header">
+                    <div class="header_meun">
+                        <a href="https://inpa.tistory.com/entry/HTML-%F0%9F%93%9A-meta-%ED%83%9C%EA%B7%B8-%EC%A0%95%EB%A6%AC">디자인</a>
+                        <a href="">퍼블리셔</a>
+                        <a href="">유튜브</a>
+                    </div>
+                    <div class="header_tit">
+                        <h1>Professional & Diesigner</h1>
+                        <br>
+                        <a href="https://webzz.tistory.com/354?category=759977">kangwoosuck</a>
+                    </div>
+                    <div class="header_icon"></div>
+                </div>                
+            </div>
+        </div>
+
+        <div id="contents">
+            <div id="cont_nav">
+                <div class="container">cont_nav</div>
+            </div>
+            <div id="cont_tit">
+                <div class="container">cont_tit</div>
+            </div>
+            <div id="cont_ban">
+                <div class="container">cont_ban</div>
+            </div>
+            <div id="cont_cont">
+                <div class="container">cont_cont</div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">footer</div>
+        </div>
+
+    </div>
+</body>
+</html>
