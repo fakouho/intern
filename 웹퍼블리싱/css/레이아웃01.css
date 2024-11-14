@@ -17,7 +17,7 @@ background: #333; line-height: 30px; width: 130px; text-align: center;}
 .container{width: 990px;margin: auto;height: inherit; background: rgba(255,255,255,0.3);}
 
 /*3.컨텐츠 레이아웃*/
-#cont_nav {background-color: #f6fdff;}
+#cont_nav {background-color: #f6fdff; display: none;}
 #cont_tit {background-color: #EAF7FD;}
 #cont_ban {background-color: #dceff7;}
 #cont_cont {background-color: #f6fdff;}
@@ -73,7 +73,7 @@ float :left로 인한 영역깨짐(height:0)방지법
 .tit h2{font-size: 40px;text-align: center; padding: 5px; color: #2c94c4; font-family: 'Nanum Brush Script', cursive;}
 .tit .btn{position: absolute; top: 5px;right: 0; width: 60px; height: 60px;
           background: url(/webstandard2019-master/img/icon.png) no-repeat 0 -600px;}
-
+          .tit .btn.on{background-position: 0 -660px;}
 
 /*배너 작업*/
 .ban {position: relative; padding: 30px;}
@@ -248,7 +248,7 @@ margin-bottom: 3px; background: #fff;}
 .popup li a img{width: 100%;}
 
 /* 푸터 */
-.footer{padding: 25px 0; text-align: center;}
+.footer{position: relative; padding: 25px 0; text-align: center;}
 .footer li{display: inline-block; padding: 0 7px 0 10px;}
 .footer li:before {content: ''; width: 1px; height: 12px; background: #ccc; position: absolute; left: 0; top: 2px;}
 .footer li:first-child:before {width: 0; height: 0;}
