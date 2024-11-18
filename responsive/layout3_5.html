@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{width: 1200px; margin: auto;}
+        
+        header{width: 100%;height: 100px; background: #4a148c;}
+        
+        .t_article{width: 100%; height: 300px; background: #9575cd;}
+        
+        aside{float: left;width: 30%; height: 400px; background: #7e57c2;}
+        
+        section{float: left;width: 70%; height: 400px; background-color: #673ab7;}
+        section .section_div1{width: 100%; height: 200px; background-color: #880e4f;}
+        section .section_div2{width: 100%; height: 200px; background-color: blue;}
+
+        .b_article{clear: both;width: 100%; height: 300px; background: #f3e5f5;}
+        .b_article .b_article_div1{float: left; width: 33.3333%; height: 100%; background-color: #ef9a9a;}
+        .b_article .b_article_div2{float: left; width: 33.3333%; height: 100%; background-color: #d32f2f} 
+        .b_article .b_article_div3{float: left; width: 33.3333%; height: 100%; background-color: #b71c1c}     
+
+        nav{overflow: hidden; width: 90%; height: 300px; padding: 5%; background: #ab47bc; }
+        nav >div{float: left; width: 23%; height: 75%;margin: 1%; border-radius: 20px; background-color: #e040fb;}
+
+        footer{width: 100%; height: 100px; background: #8e24aa;}
+
+        @media(max-width:1220px){
+            #wrap{width: 100%;}
+            .b_article .b_article_div1{width: 50%;}
+            .b_article .b_article_div2{width: 50%;}
+            .b_article .b_article_div3{display: none;}
+            nav >div{width: 31.3333%;}
+            nav >div:last-child{display: none;}
+        }
+        @media(max-width:760px){
+            .b_article .b_article_div1{width: 100%; display: block;}
+            .b_article .b_article_div2{width: 100%; display: block;}
+            nav >div{height: 50%;}
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <article class="t_article"></article>
+        <aside></aside>
+        <section>
+            <div class="section_div1">1</div>
+            <div class="section_div2">2</div>
+        </section>
+        <article class="b_article">
+            <div class="b_article_div1"></div>
+            <div class="b_article_div2"></div>
+            <div class="b_article_div3"></div>
+        </article>
+        <nav>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </nav>
+        <footer></footer>
+    </div>
+</body>
+</html>
