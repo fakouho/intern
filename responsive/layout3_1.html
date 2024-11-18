@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{width: 1200px; margin: auto;}
+        header{width: 100%; height: 150px; background: #9575cd; text-align: center;}
+        aside{width: 30%; height: 700px; background: #7e57c2; float: left; text-align: center;} 
+        section{width: 70%; height: 700px; background: #673ab7; float: left; text-align: center;}
+        footer{width: 100%; height: 150px; background: #5e35b1; clear: both; text-align: center;}
+
+        @media (max-width: 1220px){
+            #wrap{width: 95%; margin: auto;}
+        }
+        @media (max-width: 768px){
+            #wrap{width: 100%; margin: auto;}
+        }
+        @media (max-width: 480px){
+            #wrap{width: 100%; margin: auto;}
+            header{height: 300px;}
+            aside{float: none; width: 100%; height: 300px;}
+            section{float:none; width: 100%; height: 300px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>머리말</header>
+        <aside>사이드바</aside>
+        <section>메인 컨텐츠</section>
+        <footer>하단 영역</footer>
+    </div>
+</body>
+</html>
