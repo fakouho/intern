@@ -37,6 +37,8 @@ button{border: 0;}
 /*접근성을 위한 숨김 텍스트*/
 .ir_su{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
 
+/*반응형 이미지*/
+img, video{width: 100%;}
 
 /* margin, padding */
 .mt10 {margin-top: 10px !important;}
@@ -48,3 +50,7 @@ button{border: 0;}
 .mt40 {margin-top: 40px !important;}
 .mt45 {margin-top: 45px !important;}
 .mt50 {margin-top: 50px !important;}
+
+/* clearfix */
+.clearfix:before, .clearfix:after {display: block; content: ''; line-height: 0;}
+.clearfix:after {clear: both;}
