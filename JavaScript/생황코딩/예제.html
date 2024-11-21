@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Theme</title>
+</head>
+<body>
+    <header>
+        <h1><a href="#">연산자 개념</a></h1>
+    </header>
+    <section>
+        <input type="button" value="day" id="day" onclick="toggle()">
+    </section>
+    <ul>
+        <li>1.<a href="#">HTML</a></li>
+        <li>2.<a href="#">CSS</a></li>
+        <li>3.<a href="#">JavaScript</a></li>
+    </ul>
+
+    <script>
+       
+        function setLinkColors(links, color) {
+            for (let i = 0; i < links.length; i++) {
+                links[i].style.color = color;
+            }
+        }
+
+       
+        function toggle() {
+            const body = document.querySelector('body');
+            const button = document.querySelector('section > input');
+            const links = document.querySelectorAll('a');
+
+            if (button.id === "day") {
+                body.style.background = "white";
+                button.style.color = "black";
+                button.value = "night";
+                button.id = "night";
+                setLinkColors(links, "black"); 
+            } else {
+                body.style.background = "black";
+                button.style.color = "white";
+                button.value = "day";
+                button.id = "day";
+                setLinkColors(links, "purple"); 
+            }
+        }
+    </script>
+</body>
+</html>

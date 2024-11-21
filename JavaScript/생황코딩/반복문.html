@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <article>
+            <h1>반복문 개념</h1>
+        </article>
+    </header>
+    <ul id="name-list">
+        
+    </ul>
+
+    <script>
+        var lt = ["강우석", "강아리", "강먼지", "강도치", "강아롱"];
+        var list = document.getElementById("name-list");
+
+        var i = 0;
+        while (i < lt.length) {
+            list.innerHTML += '<li>' + lt[i] + '</li>';
+            i++;
+        }
+    </script>
+</body>
+</html>
