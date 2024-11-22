@@ -405,8 +405,8 @@ body{background: url(../img/header_bg.jpg) repeat-x center top;}
 .side3:hover img {opacity: 0.4;}
 .side3:hover figcaption {
     transform: translate(-50%, -50%) rotate(0deg); opacity: 1;
-}
-
+}  
+  
 /*푸터*/
 #footer{text-align: center; padding: 30px 50px ;}
 #footer li{position: relative; display: inline; padding: 0 7px 0 10px; white-space: nowrap;}
