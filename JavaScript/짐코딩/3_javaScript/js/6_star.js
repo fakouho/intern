@@ -29,10 +29,10 @@ for(let i=0;i<6;i++){
 }
 document.write('<hr>');
 for (let i = 0; i < 5; i++) { 
-    for (let j = 0; j < 5 - i - 1; j++) {
+    for (let j=0;j<5-i-1;j++) {
     document.write('&nbsp;');
     }
-    for (let k = 0; k <= i; k++) {
+    for (let k=0;k<=i;k++) {
     document.write('*'); 
     }
     document.write('<br>');
