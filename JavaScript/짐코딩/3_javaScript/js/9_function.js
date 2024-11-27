@@ -48,3 +48,4 @@ let dog=(nm='아리',age=12)=>{
     console.log(`${nm}의 나이는${age}입니다.`)
 }
 dog('강아리')
+
