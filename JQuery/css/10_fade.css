@@ -1,0 +1,15 @@
+div{
+    width: 33%;
+    height: 300px;
+    float: left;
+    display: none;
+}
+#a{
+    background: red;
+}
+#b{
+    background: blue;
+}
+#c{
+    background: green;  
+}

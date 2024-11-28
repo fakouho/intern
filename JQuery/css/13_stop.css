@@ -1,0 +1,17 @@
+#ani_box1{
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    top: 50px;
+    display: inline-block;
+}
+#ani_box2{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 500px;
+    top: 50px;
+    display: inline-block;
+}
