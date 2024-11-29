@@ -4,5 +4,5 @@ $('.btns').on('click',function(){
 })
 
 $('.btnc').on('click',function(){
-    $('#ani_box1').stop()
+    $('#ani_box1').stop(false,false)
 })

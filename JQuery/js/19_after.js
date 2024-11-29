@@ -1,7 +1,6 @@
 'use strict';
 
 $('#btn').on('click', function() {
-  
     $('ul li:first').before('<li>before로 만든 0번째</li>');
 
     

@@ -6,4 +6,4 @@ $('.outer').mouseover(function(){
 
 $('.outer').mouseenter(function(){
     console.log('마우스 엔터 이벤트 발생')  
-})
+}) 
