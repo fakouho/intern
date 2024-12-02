@@ -2,8 +2,9 @@
 $(document).ready(function(){
     
     // $('.btn').on('click', function(){
-    //     $('#display').load('../js/test.txt');
+    //     $('#display').load('../js/test.html');
     // });
+
     // let btn=document.querySelector('.btn');
     // btn.addEventListener('click',function(){
     //     let display=document.querySelector('#display');
@@ -28,14 +29,15 @@ $(document).ready(function(){
     //         });
     // });
 
-    //get방식
-    $('.btn').on('click',function(){
-        $.get('../js/test.html',function(data,status){
-            let gdata=$(data).find('#a');
-            console.log(status)
-            $('#display').html(gdata);
-        })
-    })
+    // get방식
+    // $('.btn').on('click',function(){
+    //     $.get('../js/test.html',function(data,status){
+    //         let gdata=$(data).find('#a');
+    //         console.log(status)
+    //         $('#display').html(gdata);
+    //     })
+    // })
+
     // //post 방식
     // $('.btn').on('click',function(){
     //     $.post('../js/test.html',function(data,status){
