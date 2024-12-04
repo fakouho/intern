@@ -1,17 +1,3 @@
-function loadHTML(elementId, url) {
-    fetch(url)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById(elementId).innerHTML = data;
-        })
-        .catch(err => console.error('Failed to load', err));
-}
-
-// 각 섹션을 로드하여 index.html에 삽입
-loadHTML('header', 'heder.html'); // 헤더 로드
-loadHTML('banner', 'banner.html'); // 배너 로드
-loadHTML('movie', 'movie.html'); // 무비 섹션 로드
-
 var swiper = new Swiper('.swiper-container',
 {
     pagination: {
@@ -40,7 +26,22 @@ var swiper = new Swiper('.swiper-container2',{
     autoplay: {
         delay: 6000,
     },
+    breakpoints: {
+        600: {
+            slidesPerView: 1.4,
+            spaceBetween: 24
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 24
+        },
+        960: {
+            slidesPerView: 3,
+            spaceBetween: 24
+        }
+    }
 });
+
 
 //영화 차트 탭메뉴
 var movBtn = $(".movie_title > ul > li");    
